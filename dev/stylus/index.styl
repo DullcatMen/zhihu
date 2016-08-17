@@ -1,0 +1,531 @@
+.point2
+	float left
+	font-family Arial
+	color #bbb
+	margin-right 7px
+	font-size 13px
+	line-height 1.7
+.clearFloat
+	width 0
+	height 0
+	clear both
+.effective-960
+	width 960px
+	margin 0 auto
+body
+	font-family 'Helvetica Neue',Helvetica,Arial,sans-serif
+	header
+		width 100%
+		background linear-gradient(to bottom,#086ed5,#055db5)
+		border-bottom 1px solid #044e97
+		position fixed
+		top 0
+		left 0
+		z-index 20
+		overflow hidden
+		.effective-960
+			height 45px
+			position relative
+			overflow hidden
+			.logo
+				float left
+				width 61px
+				height 45px
+				background-image url(../img/logos-1.png)
+				background-repeat no-repeat
+				background-position 0 8px
+			.searchBox
+				float left
+				margin-left 12px
+				margin-top 7px
+				color #49525c
+				position relative
+				.searchText
+					width 367px
+					height 33px
+					font-size 15px
+					padding 7px 50px 7px 10px
+					border-radius 4px
+					border 1px solid #045bb2
+					background-color #e1eaf2
+					-webkit-box-shadow inset 0 1px 3px rgba(0,0,0,.2),0 1px 0 rgba(255,255,255,.1)
+					transition all .2s ease-in-out
+					&:focus
+						background-color #fff
+						-webkit-box-shadow inset 0 1px 3px rgba(0,0,0,.2),0 1px 15px rgba(255,255,255,.3)
+						transition all .2s ease-in-out
+				.btnSearch
+					width 40px
+					height 33px
+					position absolute
+					top 0
+					right 0
+					border-radius 0 4px 4px 0
+					padding 9px 12px
+					border 1px solid #045bb2
+					box-shadow 0 1px 2px rgba(0,0,0,.05),inset 0 1px 1px rgba(255,255,255,.15)
+					background linear-gradient(to bottom,#0e7bef,#0d73da)
+					cursor pointer
+					.iconSearch
+						width 15px
+						height 15px
+						background-image url(../img/icons-1.png)
+						background-position -82px 0
+			.navBox
+				float left
+				margin-left 20px
+				.navLi
+					display block
+					float left
+					padding 0 12px
+					line-height 45px
+					text-align center
+					font-size 14px
+					color #eee
+					&.active
+						background linear-gradient(to bottom,#055fb8,#095fb3)
+						box-shadow inset 0 0 2px rgba(0,0,0,.12)
+			.outBox
+				float right
+				margin-left 15px
+				position relative
+				min-width 120px
+				z-index 10
+				&:hover
+					background -webkit-linear-gradient(top,#055fb8,#095fb3)
+					box-shadow inset 0 0 2px rgba(0,0,0,.12)
+					position fixed
+					top 0
+					right 471px
+				&:hover .dropDown
+					display block
+				.userBox
+					position relative
+					line-height 45px
+					.userPhoto
+						// float left
+						position absolute
+						left 0
+						border-radius 3px
+						border 1px solid rgba(0,0,0,.1)
+						box-shadow 0 1px 0 rgba(255,255,255,.1)
+						width 27px
+						height 27px
+						margin-top 10px
+						margin-left 8px
+					.userName
+						margin-left 45px
+						font-size 14px
+						color #fff
+				.dropDown
+					overflow hidden
+					position fixed
+					top 46px
+					right 471px
+					display none
+					.dropList
+						display block
+						width 120px
+						height 40px
+						line-height 40px
+						background #095fb3
+						border-top 1px solid #0d5aa5
+						color #fff
+						font-size 14px
+						&:hover
+							background-color #0267cc
+						i
+							width 16px
+							height 16px
+							float left
+							margin 12px 15px 0 15px
+							background-image url(../img/icons-2.png)
+							background-repeat no-repeat
+							&.myPage
+								background-position -6px -7px
+							&.letter
+								background-position -6px -34px
+							&.set
+								background-position -6px -60px
+							&.quit
+								background-position -6px -87px
+						&.last
+							border-radius 0 0 4px 4px
+			.btnQu
+				display block
+				position absolute
+				top 7px
+				right 135px
+				width 66px
+				height 32px
+				background linear-gradient(to bottom,#0e7bef,#0d73da)
+				box-shadow 0 1px 2px rgba(0,0,0,.05),inset 0 1px 1px rgba(255,255,255,.15)
+				border 1px solid #045bb2
+				border-radius 4px
+				color #fff
+				font-size 14px
+				cursor pointer
+	.main
+		width 100%
+		height 2000px
+		overflow hidden
+		margin-top 46px
+		.effective-960
+			height 600px
+			padding-top 25px
+			.mainLeft
+				float left
+				width 632px
+				height 1000px
+				.topLink
+					width 100%
+					position relative
+					overflow hidden
+					margin-bottom 35px
+					.userIcon
+						font-size 0
+						position absolute
+						top 0
+						left 0
+						img
+							width 38px
+							height 38px
+							border-radius 3px
+					.linkBox
+						margin-left 60px
+						overflow hidden
+						border 1px solid #f0f0f0
+						border-radius 4px
+						.linkStyle
+							float left
+							line-height 50px
+							padding 0 30px
+							text-align center
+							font-size 14px
+							color #6c829f
+							i
+								float left
+								margin-top 14px
+								margin-right 4px
+								width 24px
+								height 24px
+								&.iconQu
+									background-image url(../img/top-link.png)
+									background-repeat no-repeat
+									background-position -52px 0
+								&.iconAn
+									background-image url(../img/top-link.png)
+									background-repeat no-repeat
+									background-position 0 0
+								&.iconTxt
+									background-image url(../img/top-link.png)
+									background-repeat no-repeat
+									background-position 0 -26px
+							&:hover
+								color #259
+								i.iconQu
+									background-position -52px -26px
+								i.iconAn
+									background-position -26px 0
+								i.iconTxt
+									background-position -26px -26px
+					.draft
+						float right
+						line-height 50px
+						font-size 13px
+						color #999
+						margin-right 20px
+						cursor pointer
+						&:hover
+							color #698ebf
+				.tilte
+					width 100%
+					height 30px
+					border-bottom 1px solid #ccc
+					.inTitle
+						width 100%
+						height 16px
+						.titleIcon
+							float left
+							width 16px
+							height 16px
+							background-image url(../img/icons-2.png)
+							background-repeat no-repeat
+							background-position -71px -88px
+							margin-right 10px
+						h1
+							float left
+							line-height 16px
+							font-size 14px
+							color #666
+							font-weight 700
+						.setting
+							line-height 16px
+							font-size 13px
+							color #999
+							float right
+							&:hover
+								color #698ebf
+								text-decoration underline
+							i
+								float left
+								width 16px
+								height 16px
+								background-image url(../img/icons-2.png)
+								background-repeat no-repeat
+								background-position -88px -148px
+				.plateBox
+					width 100%
+					.plate
+						width 100%
+						padding 10px 0
+						position relative
+						overflow hidden
+						border-bottom 1px solid #eee
+						.userHead
+							float left
+							img
+								width 38px
+								height 38px
+								border-radius 3px
+						.number
+							display block
+							width 38px
+							color #698ebf
+							font-size 13px
+							line-height 24px
+							text-align center
+							border-radius 3px
+							position absolute
+							top 55px
+							left 0
+							&:hover
+								background-color #698ebf
+								color #fff
+						.mainPlate
+							margin-left 48px
+							.topTag
+								width 100%
+								color #999
+								font-size 13px
+								line-height 22px
+							.content
+								width 100%
+								.coTitle
+									display block
+									width 100%
+									color #259
+									font-size 14px
+									line-height 23px
+									font-weight 700
+									a:hover
+										text-decoration underline
+								.author
+									width 100%
+									overflow hidden
+									margin-top 3px
+									span
+										display block
+										float left
+										font-size 13px
+										line-height 1.7
+									.authorLink
+										font-weight 700
+										&:hover
+											text-decoration underline
+									.dico
+										color #999
+								.imgAndTxt
+									width 100%
+									font-size 13px
+									line-height 1.7
+									color #222
+									img
+										float left
+										width 200px
+										height 112px
+										border-radius 4px
+										margin-top 2px
+										margin-right 10px
+										margin-bottom 5px
+									.showAll
+										color #259
+								.coFoot
+									width 100%
+									overflow hidden
+									margin-top 6px
+									.footBtn
+										float left
+										font-size 13px
+										line-height 1.7
+										color #999
+										margin-right 7px
+										i
+											float left
+											margin-top 6px
+											margin-right 5px
+											background-image url(../img/icons-2.png)
+											background-repeat no-repeat
+											&.attention
+												width 8px
+												height 9px
+												background-position -97px -23px
+											&.review
+												width 9px
+												height 10px
+												background-position -28px -22px
+										&:hover
+											color #698ebf
+											text-decoration underline
+											i.attention
+												background-position -97px -38px
+											i.review
+												background-position -28px -37px	
+			.mainRight
+				float right
+				width 270px
+				.list
+					width 100%
+					overflow hidden
+					padding-bottom 10px
+					border-bottom 1px solid #eee
+					&.second
+						padding-top 10px
+						&.type2
+							h1
+								display block
+								font-size 14px
+								font-weight 700
+								margin-top 10px
+								margin-bottom 15px
+								.lookAll
+									display block
+									float right
+									font-size 12px
+									color #698ebf
+									&:hover
+										text-decoration underline
+							.li
+								line-height 35px
+								i
+									width 25px
+									height 25px
+									margin-top 5px
+									margin-right 9px
+									&.find
+										background-image url(../img/icons-4.png)
+										background-repeat no-repeat
+										background-position 0 0
+									&.wine
+										background-image url(../img/wine.png)
+										background-repeat no-repeat
+									&.rio
+										background-image url(../img/rio.png)
+										background-repeat no-repeat
+									&.football
+										background-image url(../img/football.png)
+										background-repeat no-repeat
+									&.shoot
+										background-image url(../img/shoot.png)
+										background-repeat no-repeat
+									&.japanIt
+										background-image url(../img/japanIt.png)
+										background-repeat no-repeat
+									&.y80
+										background-image url(../img/y80.png)
+										background-repeat no-repeat
+									&.download
+										background-image url(../img/icons-4.png)
+										background-repeat no-repeat
+										background-position 0 -27px
+								span
+									display block
+									float right
+									color #999
+									font-size 12px
+									margin-right 10px
+					.li
+						display block
+						line-height 28px
+						font-size 13px
+						color #666
+						margin-bottom 3px
+						i
+							display block
+							float left
+							width 14px
+							height 14px
+							margin-top 7px
+							margin-right 7px
+							&.myCollect
+								background-image url(../img/icons-2.png)
+								background-repeat no-repeat
+								background-position -167px -4px
+							&.myAttention
+								background-image url(../img/icons-2.png)
+								background-repeat no-repeat
+								background-position -183px -4px
+							&.myReply
+								background-image url(../img/icons-2.png)
+								background-repeat no-repeat
+								background-position -200px -4px
+							&.topic
+								background-image url(../img/icons-2.png)
+								background-repeat no-repeat
+								background-position -234px -4px
+							&.editState
+								background-image url(../img/icons-2.png)
+								background-repeat no-repeat
+								background-position -269px -4px
+							&.community
+								background-image url(../img/icons-3.png)
+								background-repeat no-repeat
+								background-position -24px -41px
+							&.copyright
+								background-image url(../img/copyright.svg)
+								background-repeat no-repeat
+								background-position left center
+						&:hover
+							color #259
+							background-color #eff6fa
+							i.myCollect
+								background-position -167px -24px
+							i.myAttention
+								background-position -183px -24px
+							i.myReply
+								background-position -200px -24px
+							i.topic
+								background-position -234px -24px
+							i.editState
+								background-position -269px -24px
+							i.community
+								background-position -67px -39px
+							i.copyright
+								background-image url(../img/copyright__hover.svg)
+				.rightEnd
+					width 100%
+					height 200px
+					padding 20px 0
+					.ul
+						width 100%
+						overflow hidden
+						margin-top 0px
+						.point
+							float left
+							margin-right 3px
+							margin-left 5px
+							font-family Arial
+							color #bbb
+						.footLi
+							display block
+							float left
+							font-size 13px
+							color #999
+							margin-left 3px
+							&:hover
+								text-decoration underline
+							
+				
+		
+			
+			

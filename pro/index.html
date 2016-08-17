@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>首页 - 知乎</title>
+		<link rel="stylesheet" type="text/css" href="../lib/reset.css" />
+		<link rel="stylesheet" type="text/css" href="./css/index.css" />
+	</head>
+	<body>
+		<header>
+			<div class="effective-960">
+				<div class="logo"></div>
+				<div class="searchBox">
+					<input type="text" placeholder="搜索你感兴趣的内容..." class="searchText" />
+					<div class="btnSearch">
+						<div class="iconSearch"></div>
+					</div>
+				</div>
+				<div class="navBox">
+					<a class="navLi active">首页</a>
+					<a class="navLi">话题</a>
+					<a class="navLi">发现</a>
+					<a class="navLi">消息</a>
+				</div>
+				<div class="outBox">
+					<a class="userBox">
+						<img class="userPhoto" src="./img/userphoto.jpg" />
+						<span class="userName">施华洛世奇</span>
+					</a>
+					<div class="dropDown">
+						<a class="dropList">
+							<i class="myPage"></i>
+							我的主页
+						</a>
+						<a class="dropList">
+							<i class="letter"></i>
+							私信
+						</a>
+						<a class="dropList">
+							<i class="set"></i>
+							设置
+						</a>
+						<a class="dropList last">
+							<i class="quit"></i>
+							退出
+						</a>
+					</div>
+				</div>
+				<input type="button" value="提问" class="btnQu" />
+			</div>
+		</header>
+		<div class="main">
+			<div class="effective-960">
+				<div class="mainLeft">
+					<div class="topLink">
+						<div class="userIcon">
+							<img src="./img/user-icon.jpg" />
+						</div>
+						<div class="linkBox">
+							<a class="linkStyle">
+								<i class="iconQu"></i>
+								<span>提问</span>
+							</a>
+							<a class="linkStyle">
+								<i class="iconAn"></i>
+								<span>回答</span>
+							</a>
+							<a class="linkStyle">
+								<i class="iconTxt"></i>
+								<span>写文章</span>
+							</a>
+							<div class="draft">草稿</div>
+						</div>
+					</div>
+					<div class="tilte">
+						<div class="inTitle">
+							<i class="titleIcon"></i>
+							<h1>最新动态</h1>
+							<a class="setting">
+								<i></i>
+								设置
+							</a>
+						</div>
+					</div>
+					<div class="plateBox">
+						<!-- template -->
+					</div>
+				</div>
+				<div class="mainRight">
+					<div class="list">
+						<a class="li"><i class="myCollect"></i>我的收藏</a>
+						<a class="li"><i class="myAttention"></i>我关注的问题</a>
+						<a class="li"><i class="myReply"></i>邀请我回答的问题</a>
+					</div>
+					<div class="list second">
+						<a class="li"><i class="topic"></i>话题广场</a>
+						<a class="li"><i class="editState"></i>公共编辑动态</a>
+						<a class="li"><i class="community"></i>社区服务中心</a>
+						<a class="li"><i class="copyright"></i>版权服务中心</a>
+					</div>
+					<div class="list second type2">
+						<h1>知乎专栏</h1>
+						<a class="li"><i class="find"></i>专栏・发现</a>
+					</div>
+					<div class="list second type2">
+						<h1>
+							知乎圆桌
+							<a class="lookAll">查看全部 »</a>
+						</h1>
+						<a class="li">
+							<i class="wine"></i>
+							闲话葡萄酒
+							<span>还有 4 天结束</span>
+						</a>
+						<a class="li">
+							<i class="rio"></i>
+							里约奥运
+							<span>还有 1 周结束</span>
+						</a>
+						<a class="li">
+							<i class="football"></i>
+							看球・欧洲杯
+						</a>
+					</div>
+					<div class="list second type2">
+						<h1>
+							知乎电子书
+							<a class="lookAll">查看全部 »</a>
+						</h1>
+						<a class="li">
+							<i class="shoot"></i>
+							穿过硝烟：我是纪实摄影师
+						</a>
+						<a class="li">
+							<i class="japanIt"></i>
+							浅谈日本 IT 行业
+						</a>
+						<a class="li">
+							<i class="y80"></i>
+							请回答，八十年代
+						</a>
+					</div>
+					<div class="list second type2">
+						<a class="li"><i class="download"></i>下载 App</a>
+					</div>
+					<div class="rightEnd">
+						<div class="ul">
+							<a class="footLi">刘看山</a>
+							<div class="point">•</div>
+							<a class="footLi">知乎指南</a>
+							<div class="point">•</div>
+							<a class="footLi">建议反馈</a>
+							<div class="point">•</div>
+							<a class="footLi">移动应用</a>
+						</div>
+						<div class="ul">
+							<a class="footLi">加入知乎</a>
+							<div class="point">•</div>
+							<a class="footLi">知乎协议</a>
+							<div class="point">•</div>
+							<a class="footLi">联系我们</a>
+							<a class="footLi">© 2016 知乎</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 引用模版js -->
+		<script src="../lib/arttemplate@3.0.0.min.js"></script>
+
+		<script type="text/html" id="tmpl">
+			<div class="plate">
+				<div class="userHead">
+					<img src="<%=data.userHead%>" />
+				</div>
+				<a class="number"><%=data.number%></a>
+				<div class="mainPlate">
+					<div class="topTag"><%=data.topTag%></div>
+					<div class="content">
+						<h1 class="coTitle"><a><%=data.tle%></a></h1>
+						<div class="author">
+							<span class="authorLink"><%=data.author%></span>
+							<span>，</span>
+							<span class="dico"><%=data.dico%></span>
+						</div>
+						<div class="imgAndTxt">
+							<img src="<%=data.contentImg%>" />
+							<%=data.contentTxt%>
+							<a class="showAll">显示全部</a>
+						</div>
+						<div class="clearFloat"></div>
+						<div class="coFoot">
+							<a class="footBtn">
+								<i class="attention"></i>
+								关注专栏
+							</a>
+							<a class="footBtn">
+								<i class="review"></i>
+								<%=data.review%> 条评论
+							</a>
+							<div class="point2">•</div>
+							<a class="footBtn">
+								去往文章页
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</script>
+
+		<script src="../lib/jquery@1.7.1.min.js" type="text/javascript"></script>
+		<script src="./js/index.js" type="text/javascript"></script>
+	</body>
+</html>
